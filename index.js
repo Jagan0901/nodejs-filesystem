@@ -7,6 +7,10 @@ const PORT =8000;
 
 app.use(express.json());
 
+app.get('/',(req,res)=>{
+    res.send("Hello Everyone")
+})
+
 app.use("/FileSystem", fsRouter); 
 
 //API endpoints : 
